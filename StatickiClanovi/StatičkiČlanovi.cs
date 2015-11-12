@@ -6,16 +6,18 @@ namespace Vsite.CSharp
     {
         static int _brojač = 0;
 
-        // TODO: U konstruktor dodati naredbu koja će uvećati _brojač za 1
+        // U konstruktor dodati naredbu koja će uvećati _brojač za 1
 
         public MojaKlasa()
         {
+            ++_brojač;
         }
 
-        // TODO: U metodu dodati naredbu koja će ispisati trenutnu vrijednost člana _brojač
+        // U metodu dodati naredbu koja će ispisati trenutnu vrijednost člana _brojač
 
         public static void IspišiBrojInstanci()
         {
+            Console.WriteLine(_brojač);
         }
     }
 
@@ -23,12 +25,15 @@ namespace Vsite.CSharp
     {
         static void Main(string[] args)
         {
-            // TODO: Nakon svakog poziva konstruktora pozvati metodu IspišiBrojInstanci()
+            // Nakon svakog poziva konstruktora pozvati metodu IspišiBrojInstanci()
             MojaKlasa mk1 = new MojaKlasa();
+            MojaKlasa.IspišiBrojInstanci();
 
             MojaKlasa mk2 = new MojaKlasa();
+            MojaKlasa.IspišiBrojInstanci();
 
             mk1 = new MojaKlasa();
+            MojaKlasa.IspišiBrojInstanci();
 
             Console.ReadKey();
         }
