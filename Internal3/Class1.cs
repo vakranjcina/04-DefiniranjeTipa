@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Vsite.CSharp
 {
-    // TODO: Prevesti program i popraviti pogreške koje prevoditelj javlja
+    // Prevesti program i popraviti pogreške koje prevoditelj javlja
 
-    class BaznaInterna
+    public class BaznaInterna
     {
     }
 
