@@ -4,21 +4,27 @@ namespace Vsite.CSharp
 {
     class MojaKlasa
     {
-        // TODO: Dodati jedna privatno polje (podatkovni član)
+        // Dodati jedna privatno polje (podatkovni član)
+        private int x = 1;
 
-
-        // TODO: Dodati javnu metodu koja će ispisati podatkovni član
-
+        // Dodati javnu metodu koja će ispisati podatkovni član
+        public int DajMiXa()
+        {
+            return this.x;
+        }
     }
 
 
     struct MojaStruktura
     {
-        // TODO: Dodati jedna privatno polje (podatkovni član)
+        // Dodati jedna privatno polje (podatkovni član)
+        string s;
 
-
-        // TODO: Dodati javnu metodu koja će ispisati podatkovni član
-
+        // Dodati javnu metodu koja će ispisati podatkovni član
+        public string DajMiStringa()
+        {
+            return s;
+        }
     }
 
 
@@ -26,9 +32,13 @@ namespace Vsite.CSharp
     {
         static void Main(string[] args)
         {
-            // TODO: Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu
+            // Inicijalizirati objekt tipa MojaKlasa i pozvati njegovu metodu
+            MojaKlasa ak = new MojaKlasa();
+            ak.DajMiXa();
 
-            // TODO: Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu
+            // Inicijalizirati objekt tipa MojaStruktura i pozvati njegovu metodu
+            MojaStruktura ms = new MojaStruktura();
+            ms.DajMiStringa();
 
             Console.ReadKey();
         }
