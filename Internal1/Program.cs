@@ -5,7 +5,7 @@ namespace Vsite.CSharp
     {
         static void Main(string[] args)
         {
-            // TODO: Prevedite kod i popravite pogreške koje prevoditelj prijavljuje
+            // Prevedite kod i popravite pogreške koje prevoditelj prijavljuje
 
             IzvedenaIzJavne iij = new IzvedenaIzJavne();
 
