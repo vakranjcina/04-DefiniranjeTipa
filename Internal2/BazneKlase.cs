@@ -5,7 +5,7 @@ namespace Vsite.CSharp
     {
     }
 
-    internal class InternaBazna
+    public class InternaBazna
     {
     }
 }
